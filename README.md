@@ -1,2 +1,2 @@
-# Core
-Core Is a Library
+# Lexicon
+Lexicon Is a Library
