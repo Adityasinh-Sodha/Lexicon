@@ -8,6 +8,7 @@
 - Created Homepage
 - Added PSP Rom's Game data
 - Added PSP Rom's Covers
+- Deploy the app in Github Pages
 
  #### 2. fixed:
 
