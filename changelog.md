@@ -4,6 +4,7 @@
 
   #### 1. added:
 
+- Created small readme.md 
 - Created Homepage
 - Added PSP Rom's Game data
 - Added PSP Rom's Covers
