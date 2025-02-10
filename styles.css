@@ -60,55 +60,38 @@ main {
   margin-top: 40px;
 }
 
-
-/* Books and Roms List */
-.books-list, .roms-list {
+.psp-list, .nes-list {
   display: flex;
   flex-wrap: wrap;
   justify-content: left;
 }
 
-.book, .roms {
-  background-color: white;
-  padding: 15px;
-  margin: 15px;
-  width: 250px;
-  text-align: center;
-  border-radius: 8px;
-  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-
-/* Hover effect for book and rom blocks */
-.book:hover, .roms:hover {
+.psp:hover, .nes:hover {
   transform: scale(1.05);
   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
 }
 
-/* Book and Roms Title Styling */
-.book h2, .roms h2 {
+.psp h2, .nes h2 {
   font-size: 1.3rem;
   color: #333;
   margin-bottom: 10px;
 }
 
-/* Author and Link Styling */
-.book p, .roms p {
+.psp p, .nes p {
   font-size: 1rem;
   color: #666;
 }
 
-.book a, .roms a {
+.psp a, .nes a {
   color: #007BFF;
   text-decoration: none;
 }
 
-.book a:hover, .roms a:hover {
+.psp a:hover, .nes a:hover {
   text-decoration: underline;
 }
 
-/* Roms Styling */
-.roms {
+.psp, .nes {
   background-color: white;
   padding: 15px;
   margin: 15px;
@@ -119,36 +102,9 @@ main {
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-.roms:hover {
-  transform: scale(1.05);
-  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
-}
-
-/* Cover image styling */
-.roms-cover {
+.psp-cover, .nes-cover {
   width: 100%;
   height: auto;
   border-radius: 8px;
   margin-bottom: 10px;
-}
-
-/* Roms Title Styling */
-.roms h2 {
-  font-size: 1.3rem;
-  color: #333;
-  margin-bottom: 10px;
-}
-
-.roms p {
-  font-size: 1rem;
-  color: #666;
-}
-
-.roms a {
-  color: #007BFF;
-  text-decoration: none;
-}
-
-.roms a:hover {
-  text-decoration: underline;
 }
