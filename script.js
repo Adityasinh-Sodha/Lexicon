@@ -13,12 +13,10 @@ function searchGames() {
     return;
   }
 
-  // Display search results
   filteredGames.forEach(game => {
     const gameElement = document.createElement('div');
     gameElement.classList.add('search-result');
 
-    // Determine platform and set the correct cover path
     let coverPath = game.cover;
     if (game.platform === 'NES') {
       coverPath = `nes/${game.cover}`;
@@ -40,22 +38,28 @@ const menuToggle = document.getElementById('menuToggle');
 const sidebar = document.getElementById('sidebar');
 const closeBtn = document.getElementById('closeBtn');
 
-// Open sidebar
 menuToggle.addEventListener('click', () => {
   sidebar.style.width = '250px';
   document.body.classList.add('menu-open');
 });
 
-// Close sidebar
 closeBtn.addEventListener('click', () => {
   sidebar.style.width = '0';
   document.body.classList.remove('menu-open');
 });
 
-// Close sidebar when clicking outside of it
 document.addEventListener('click', (e) => {
   if (!sidebar.contains(e.target) && !menuToggle.contains(e.target)) {
     sidebar.style.width = '0';
     document.body.classList.remove('menu-open');
   }
+});
+
+document.addEventListener('DOMContentLoaded', () => {
+  const menuToggle = document.querySelector('.menu-toggle');
+  const menu = document.querySelector('.menu');
+
+  menuToggle.addEventListener('click', () => {
+    menu.classList.toggle('active');
+  });
 });
