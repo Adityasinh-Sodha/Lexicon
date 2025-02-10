@@ -29,6 +29,7 @@
 - Added NES Rom's Game data
 - Added NES Rom's Covers
 - Added Download links for all games
+- Added Menu in Homepage
 
  #### 2. fixed:
 
