@@ -17,3 +17,27 @@
  #### 3. known_issues:
     
 - Non reported in current state
+
+## Unreleased - 2025-02-10
+
+### changes:
+
+  #### 1. added:
+
+- Created `script.js` in root directory
+- Added a Search bar that can search all games that are indexed
+- Added NES Rom's Game data
+- Added NES Rom's Covers
+- Added Download links for all games
+
+ #### 2. fixed:
+
+- Fixed JavaScript string and make it separated for NES and PSP
+- Rename both strings to `pspGames` and `nesGames` for clarification
+- Made files and string separated by creating `nes.js` and `psp.js`
+- Fixed Cover's name and string by removing special characters
+- Added separated Platform in string for `NES` and `PSP` games
+
+ #### 3. known_issues:
+    
+- Some game's covers are not visible in search results
