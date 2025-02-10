@@ -2,13 +2,10 @@ function searchGames() {
   const query = document.getElementById('searchInput').value.toLowerCase();
   const resultsContainer = document.getElementById('searchResults');
 
-  // Clear previous results
   resultsContainer.innerHTML = '';
 
-  // Combine both NES and PSP games
   const allGames = (window.nesGames || []).concat(window.pspGames || []);
 
-  // Filter based on search query
   const filteredGames = allGames.filter(game => game.title.toLowerCase().includes(query));
 
   if (filteredGames.length === 0) {
@@ -38,3 +35,27 @@ function searchGames() {
     resultsContainer.appendChild(gameElement);
   });
 }
+
+const menuToggle = document.getElementById('menuToggle');
+const sidebar = document.getElementById('sidebar');
+const closeBtn = document.getElementById('closeBtn');
+
+// Open sidebar
+menuToggle.addEventListener('click', () => {
+  sidebar.style.width = '250px';
+  document.body.classList.add('menu-open');
+});
+
+// Close sidebar
+closeBtn.addEventListener('click', () => {
+  sidebar.style.width = '0';
+  document.body.classList.remove('menu-open');
+});
+
+// Close sidebar when clicking outside of it
+document.addEventListener('click', (e) => {
+  if (!sidebar.contains(e.target) && !menuToggle.contains(e.target)) {
+    sidebar.style.width = '0';
+    document.body.classList.remove('menu-open');
+  }
+});
