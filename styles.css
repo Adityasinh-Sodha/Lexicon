@@ -10,9 +10,14 @@ body {
 }
 
 header {
-  background-color: #333;
-  color: white;
-  padding: 10px;
+  position: relative;
+  z-index: 1000; 
+  display: flex;
+  align-items: center;  
+  justify-content: center;  
+  padding: 10px 20px;  
+  background-color: #333;  
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
 nav ul {
@@ -40,6 +45,7 @@ main {
   background-color: #00bcd4;
   color: white;
   padding: 50px 0;
+  z-index: 100;
 }
 
 .hero h1 {
@@ -166,4 +172,56 @@ main {
   height: auto;
   border-radius: 8px;
   margin-bottom: 10px;
+}
+
+.sidebar {
+  height: 100%;
+  width: 0; 
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: #333;
+  overflow-x: hidden;
+  transition: 0.3s;
+  padding-top: 60px;
+  z-index: 1000;
+}
+
+.sidebar a {
+  padding: 15px 25px;
+  text-decoration: none;
+  font-size: 1.2rem;
+  color: #f1f1f1;
+  display: block;
+  transition: 0.3s;
+}
+
+.sidebar a:hover {
+  background-color: #575757;
+}
+
+.sidebar .close-btn {
+  position: absolute;
+  top: 0px;
+  right: 20px;
+  font-size: 2rem;
+  color: #fff;
+  cursor: pointer;
+  z-index: 1000;
+}
+
+.menu-toggle {
+  font-size: 1.5rem;
+  cursor: pointer;
+  color: #fff;
+  position: absolute;
+  top: 50%;  
+  left: 20px;  
+  transform: translateY(-50%);  
+  z-index: 1100;  
+}
+
+body.menu-open {
+  margin-left: 250px;
+  transition: margin-left 0.3s ease;
 }
