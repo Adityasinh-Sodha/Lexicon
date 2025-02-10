@@ -30,6 +30,7 @@
 - Added NES Rom's Covers
 - Added Download links for all games
 - Added Menu in Homepage
+- Added Menu's transition effect
 
  #### 2. fixed:
 
@@ -37,7 +38,8 @@
 - Rename both strings to `pspGames` and `nesGames` for clarification
 - Made files and string separated by creating `nes.js` and `psp.js`
 - Fixed Cover's name and string by removing special characters
-- Added separated Platform in string for `NES` and `PSP` games
+- Added Platforms in string for `NES` and `PSP` games
+- Fixed hamburger icon(menu) position
 
  #### 3. known_issues:
     
